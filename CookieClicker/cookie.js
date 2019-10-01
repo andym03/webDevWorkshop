@@ -26,6 +26,7 @@ function getTenCookies() {
         achievements['getTenCookies'] = true;
         createAchievementAlert("How the Cookie Crumbles", "Get 10 Cookies!");
     }
+
 }
 
 
@@ -44,11 +45,11 @@ function buyMultiplier() {
 }
 
 function buyFactory() {
-    if (score >= 10) {
+    if (score >= 25) {
         if (factoryCount == 0) {
             factoryCheck();
         }
-        score -= 10;
+        score -= 25;
         factoryCount++;
         updateScore();
     }
@@ -64,6 +65,11 @@ function updateScore() {
     var getScore = document.getElementById("score").innerHTML;
     if (getScore != undefined) {
         document.getElementById("score").innerHTML = score;
+    }
+    //updates the cookie per click count
+    var getClick = document.getElementById("cookiePerClick").innerHTML;
+    if (getClick != undefined) {
+        document.getElementById("cookiePerClick").innerHTML = cursorCount+1;
     }
     checkAchievements();
 }
