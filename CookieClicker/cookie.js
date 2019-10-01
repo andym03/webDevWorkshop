@@ -38,21 +38,29 @@ function theBigClick() {
 }
 
 function buyMultiplier() {
-    if (score >= 5) {
-        score -= 5;
+    if (score >= cursorCost) {
+        score -= cursorCost;
         cursorCount += 0.1;
+
+        cursorCost = parseInt(document.getElementById("cursorCost").innerHTML) + 1;
+        document.getElementById("cursorCost").innerHTML = cursorCost;
+
         updateScore();
     }
 }
 
 function buyFactory() {
-    if (score >= 25) {
+    if (score >= factoryCost) {
         if (factoryCount == 0) {
             factoryCheck();
         }
-        score -= 25;
+        score -= factoryCost;
         factoryCount++;
         cookiesPerSecond += 1;
+        //incrememnting cost of the factory
+        factoryCost = parseInt(document.getElementById("factoryCost").innerHTML) + 10;
+        document.getElementById("factoryCost").innerHTML = factoryCost;
+
         updateScore();
     }
 }

@@ -102,6 +102,11 @@ h1 {
     height: 800px;
     margin-right:10px;
 }
+.achievementsList {
+    width: 250px;
+    height: 800px;
+    margin-left:10px;
+}
 
 .inline {
     display: inline; /* the default for span */

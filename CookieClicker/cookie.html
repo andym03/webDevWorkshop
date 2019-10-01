@@ -13,6 +13,9 @@
         <h4> Cookies per second:  
                 <p id="cookiesPerS" class = "inline">0</p> 
         </h4>
+        <h2> Level : 
+            <p id="level" class="inline"> 1 </p>
+        </h2>
 
         <div class="column">
             <div class="card">
@@ -20,24 +23,31 @@
                 <div class="cardContents"> 
                     <div class="storeItem">
                         <h3>Factory</h3>
-                        <img src="factory.jpg" onClick="buyFactory()">
+                        <img src="factory.png" onClick="buyFactory()">
                         <p>Gain a cookie per second</p>
-                        <h5>25</h5>
+                        <h5 id="factoryCost">25</h5>
                     </div>
                     <div class="storeItem">
                         <h3>Cursor</h3>
                         <img src="cursor.png" onClick="buyMultiplier()">
                         <p>Increment the score received from clicking by 0.1</p>
-                        <h5>5</h5>
+                        <h5 id="cursorCost">5</h5>
                     </div>
+                    <div class="storeItem">
+                            <h3>Giga Factory</h3>
+                            <img src="factoryGiga.jpg" onClick="buyGigaMultiplier()">
+                            <p>Gain 10 cookies per second</p>
+                            <h5>200</h5>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="card inventory">
-            <h2>Inventory</h2>
-        </div>
-        
-    </div>
+   
+    <!-- <div>
+            <div class="card inventory">
+                <h2>Inventory</h2>
+            </div>
+            
+        </div> -->
 </div>
