@@ -6,6 +6,7 @@ var factoryCost = 10;
 var cursorCost = 5;
 
 var achievementCount = 0;
+var cookiesPerSecond = 0;
 
 // Feel free to create more achievements by following this pattern.
 var achievements = {
@@ -51,12 +52,13 @@ function buyFactory() {
         }
         score -= 25;
         factoryCount++;
+        cookiesPerSecond += 1;
         updateScore();
     }
 }
 
 function factoryCheck() {
-    score = score+factoryCount;
+    score = score+cookiesPerSecond;
     updateScore();
 }
 
@@ -70,6 +72,12 @@ function updateScore() {
     var getClick = document.getElementById("cookiePerClick").innerHTML;
     if (getClick != undefined) {
         document.getElementById("cookiePerClick").innerHTML = cursorCount+1;
+    }
+
+    //updates the cookie per second count
+    var getRate = document.getElementById("cookiesPerS").innerHTML;
+    if (getRate != undefined) {
+        document.getElementById("cookiesPerS").innerHTML = cookiesPerSecond;
     }
     checkAchievements();
 }
