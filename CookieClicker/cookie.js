@@ -1,4 +1,7 @@
+// Score is our currency as well!
 var score = 0;
+
+// Inventory Counts. Be sure to increment when you buy things!
 var cursorCount = 0;
 var factoryCount = 0;
 
@@ -9,6 +12,7 @@ var achievementCount = 0;
 var cookiesPerSecond = 0;
 
 // Feel free to create more achievements by following this pattern.
+// Make sure the string name is the name of the function that checks the achievement condition
 var achievements = {
     'getTenCookies' : false
 }
@@ -29,8 +33,6 @@ function getTenCookies() {
     }
 
 }
-
-
 
 function theBigClick() {
     score = score + 1 + cursorCount;

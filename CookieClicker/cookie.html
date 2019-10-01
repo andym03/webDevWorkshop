@@ -16,29 +16,32 @@
         <h2> Level : 
             <p id="level" class="inline"> 1 </p>
         </h2>
-
-        <div class="column">
-            <div class="card">
-                <h2>Store</h2>
-                <div class="cardContents"> 
-                    <div class="storeItem">
-                        <h3>Factory</h3>
-                        <img src="factory.png" onClick="buyFactory()">
-                        <p>Gain a cookie per second</p>
-                        <h5 id="factoryCost">25</h5>
-                    </div>
-                    <div class="storeItem">
-                        <h3>Cursor</h3>
-                        <img src="cursor.png" onClick="buyMultiplier()">
-                        <p>Increment the score received from clicking by 0.1</p>
-                        <h5 id="cursorCost">5</h5>
-                    </div>
-                    <div class="storeItem">
-                            <h3>Giga Factory</h3>
-                            <img src="factoryGiga.jpg" onClick="buyGigaMultiplier()">
-                            <p>Gain 10 cookies per second</p>
-                            <h5>200</h5>
+        <div class="card">
+            <div class="row">
+                <div class="column">
+                    <h2>Store</h2>
+                    <div style="display:flex">
+                        <div class="cardContents"> 
+                            <div class="storeItem">
+                                <h3>Factory</h3>
+                                <img src="factory.png" onClick="buyFactory()">
+                                <p>Gain a cookie per second</p>
+                                <h5 id="factoryCost">25</h5>
+                            </div>
+                            <div class="storeItem">
+                                <h3>Cursor</h3>
+                                <img src="cursor.png" onClick="buyMultiplier()">
+                                <p>Increment the score received from clicking by 0.1</p>
+                                <h5 id="cursorCost">5</h5>
+                            </div>
+                            <div class="storeItem">
+                                <h3>Giga Factory</h3>
+                                <img src="factoryGiga.jpg" onClick="buyGigaMultiplier()">
+                                <p>Gain 10 cookies per second</p>
+                                <h5>200</h5>
+                            </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
