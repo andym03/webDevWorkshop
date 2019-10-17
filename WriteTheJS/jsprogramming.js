@@ -95,14 +95,14 @@ function setAnswer(data) {
     The function called by the first plus minus button. Do not modify
 */
 function plusMinus1() {
-    checkPlusMinus1(plusMinus(plusMinusTest1), plusMinusAns1);
+    checkPlusMinus(plusMinus(plusMinusTest1), plusMinusAns1);
 }
 
 /*
     The function called by the second plus minus button. Do not modify
 */
 function plusMinus2() {
-    checkPlusMinus1(plusMinus(plusMinusTest2), plusMinusAns2);
+    checkPlusMinus(plusMinus(plusMinusTest2), plusMinusAns2);
 }
 
 /*
@@ -110,7 +110,7 @@ function plusMinus2() {
     set for either plusMinus1 or plusMinus2. Answers are at the bottom of the page, input at the top.
     Do not modify.
 */
-function checkPlusMinus1(result, answer) {
+function checkPlusMinus(result, answer) {
     if (result == undefined) {
         document.getElementsByTagName("h4")[0].innerHTML = "Wrong!";
     }
